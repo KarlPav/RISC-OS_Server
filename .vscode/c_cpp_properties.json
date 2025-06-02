@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "RISC OS GCCSDK",
+            "compilerPath": "/home/piOS/gccsdk/cross/bin/arm-unknown-riscos-gcc",
+            "cStandard": "gnu99",
+            "cppStandard": "gnu++98",
+            "intelliSenseMode": "gcc-arm",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/h/**",
+                "${workspaceFolder}/**",
+                "/home/piOS/gccsdk/env/include"
+            ],
+            "defines": [
+                "__riscos__",
+                "ARM_ARCH=5"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/home/piOS/gccsdk/env/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
